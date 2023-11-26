@@ -17,16 +17,8 @@ public class Board {
         return rows;
     }
 
-    public void setRows(Integer rows) {
-        this.rows = rows;
-    }
-
     public Integer getColumns() {
         return columns;
-    }
-
-    public void setColumns(Integer columns) {
-        this.columns = columns;
     }
 
     public Piece piece(int row, int column) {
@@ -37,8 +29,9 @@ public class Board {
         return pieces[position.getRow()][position.getColumn()];
     }
 
-    public void place(Piece piece, Position position) {
-
+    public void placePiece(Piece piece, Position position) {
+        pieces[position.getRow()][position.getColumn()] = piece;
+        piece.position = position;
     }
 
     public Piece removePiece(Position position) {
