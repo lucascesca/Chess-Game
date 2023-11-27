@@ -1,5 +1,6 @@
 package application;
 
+import boardgame.BoardException;
 import chess.ChessMatch;
 
 public class Program {
