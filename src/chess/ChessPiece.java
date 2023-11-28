@@ -21,7 +21,6 @@ public class ChessPiece extends Piece {
         return moveCount;
     }
 
-    @Override
     public boolean[][] possibleMoves() {
         return new boolean[0][];
     }
